@@ -1,3 +1,11 @@
+nmap 10.10.41.0/24 -p 22 --open | awk '/is up/ {print up}; {gsub (/\(|\)/,""); up = $NF}'
+
+
+
+
+
+
+
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
